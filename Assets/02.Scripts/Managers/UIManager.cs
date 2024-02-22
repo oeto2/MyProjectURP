@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class UIManager : MonoBehaviour
+public class UIManager : SingletoneBase<UIManager>
 {
-    // Start is called before the first frame update
-    void Start()
+    //UI ¿­±â
+    public void OpenUI(GameObject gameObj)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        gameObj.SetActive(true);
     }
 }
